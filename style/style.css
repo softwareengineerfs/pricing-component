@@ -113,6 +113,9 @@ padding-right: 20px;
 .switch-label:hover {
    color: #6E728E;
 }
+.switch-label:active {
+  color: #6E728E;
+}
 .switch-control {
   position: relative;
   width: 56px;
