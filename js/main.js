@@ -1,6 +1,6 @@
 /*GETTING ELEMENTS*/
-const elToggleAnnually = document.querySelector(".toggle-anually");
-const elToggleMonthly = document.querySelector(".toggle-monthly");
+const elToggleAnnually = document.querySelector(".switch-input-annual");
+const elToggleMonthly = document.querySelector(".switch-input-monthly");
 
 // GETTING CLASSES
 const elToggleMasksPriceBasic = document.querySelector(" .masks-price-basic");
