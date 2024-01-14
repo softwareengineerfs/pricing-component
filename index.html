@@ -13,21 +13,28 @@
 <header class="site-header">
  <div class="site-header-container container">
   <h1 class="site-header-heading">Our Pricing</h1>
-  <div class="header-toggle">
 
-   <label>
-    <span  class="toggles-text">Annually</span>
-    <button class=" button  toggle-anually" type="button"></button>
-   </label>
+  <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="get">
+    <!-- SWITCH -->
+    <div class="switch">
+      <!-- SWITCH RADIOS -->
+      <input class="switch-input-annual  visuallyhidden"  type="radio" name="payment_period" value="annual" id="annual-payment-radio">
 
-   <label >
-    <button class="button toggle-monthly" type="button"></button>
-    <span class="toggles-text">Monthly</span>
-   </label>
+      <input class="switch-input-monthly visuallyhidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
 
+      <label class="switch-label"  for="annual-payment-radio">Annually</label>
+         <!-- SWITCH CONTROL -->
+        <div class="switch-control">
+          <div class="switch-circle">
+            <label class="switch-control-annual"  for="annual-payment-radio"></label>
+            <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+          </div>
+        </div>
 
+      <label class="switch-label" for="monthly-payment-radio">Monthly</label>
+    </div>
+  </form>
 
-  </div>
  </div>
 </header>
 
@@ -37,7 +44,7 @@
 <ul class="masks">
 
 
-  <li class="masks-item">
+  <li class="masks-item" data-payment-annual="199.99" data-oylik="19.99">
     <p class="masks-title">Basic</p>
     <div class="masks-price-wrapper">
       <p class="dollar-sign">$</p>
@@ -55,7 +62,7 @@
     <a class="masks-link" href="#">LEARN MORE</a>
   </li>
 
-  <li class="masks-item masks-professional">
+  <li class="masks-item masks-professional" data-payment-annual="249.99" data-oylik="24.99">
     <p class="masks-title">Professional</p>
     <div class="masks-price-wrapper">
       <p class="dollar-sign">$</p>
@@ -73,7 +80,7 @@
     <a class="masks-link masks-professional-link" href="#">LEARN MORE</a>
   </li>
 
-  <li class="masks-item masks-master">
+  <li class="masks-item masks-master" data-payment-annual="399.99" data-oylik="39.99">
     <p class="masks-title">Master</p>
     <div class="masks-price-wrapper">
       <p class="dollar-sign">$</p>
